@@ -1,0 +1,22 @@
+.search{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.search input{
+    border: none;
+    background: #413f44;
+    outline: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search img{
+    cursor: pointer;
+}

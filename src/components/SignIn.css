@@ -1,0 +1,42 @@
+.signInForm{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #225;
+    position: relative;
+    padding-top: 50px;
+    gap: 2rem;
+    border-radius: 24px;
+}
+
+.submit-btn{
+    position: absolute;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100px;
+    bottom: 20px;
+    left: 200px;
+    border-radius: 24px;
+}
+
+form input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    font-size: 15px;
+    background: #7f827d89;
+    backdrop-filter: blur(5px);
+    color: white;
+}
