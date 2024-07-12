@@ -1,36 +1,5 @@
-.heading-banner{
-    display: flex;
-    position: relative;
+.movies-banner{
     width: 100vw;
-    height: p45vh;
-    gap: 5px;
-    margin-left: 5px;
-    background-color: #444;
-    align-items: center;
-}
-
-.heading-banner .cover img{
-    margin: 5px;
-    padding: 5px;
-    border-radius: 9px;
-}
-
-.heading-banner .left-arrow{
-    
-    height: 100%;
-    cursor: pointer;
-    text-align: center;
-    max-width: 5%;
-    width: 3%;
-    min-width: 3%;
-}
-
-.heading-banner .right-arrow{
-    height: 100%;
-    cursor: pointer;
-    text-align: center;
-    right: 0;
-    max-width: 5%;
-    width: 3%;
-    min-width: 3%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
 }

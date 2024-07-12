@@ -30,6 +30,10 @@ form{
     border-radius: 24px;
 }
 
+.submit-btn:hover{
+    background: #7f827d70;
+}
+
 form input{
     padding: 20px;
     border: none;

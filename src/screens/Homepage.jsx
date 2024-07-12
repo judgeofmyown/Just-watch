@@ -8,7 +8,7 @@ function Homepage() {
       <div className="home-container">
         <div className="upper">
           <div className="intro">
-            <h1>Your streaming guide for movies,<br/> TV shows & sports</h1>
+            <h1 className='gradient-text'>Your streaming guide for movies,<br/> TV shows & sports</h1>
           </div>
           
           <div className="towatch">

@@ -1,7 +1,17 @@
 .home-container{
     width: 100vw;
     height: 100vh;
+    color: white;
+}
 
+.gradient-text {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #757271, #4754a2); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .upper{

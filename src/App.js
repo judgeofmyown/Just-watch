@@ -9,6 +9,7 @@ import Search from './components/Search';
 import Homepage from './screens/Homepage';
 import MoviesBanner from './components/MoviesBanner';
 import About from './screens/About';
+import LogIn from './components/LogIn';
 
 
 function App() {
@@ -69,8 +70,8 @@ function App() {
 
     },
     {
-      path:"/profile",
-      element:<h3>Profile</h3>
+      path:"/Login",
+      element:<LogIn/>
     },
     {
       path:"/About",

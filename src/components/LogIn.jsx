@@ -3,22 +3,37 @@ import { Context } from '../Context/Context'
 
 function LogIn() {
 
+  const {username,
+    password,
+    setPassword, 
+    handleLogInSubmit, 
+    loginEmail, 
+    loginUserName, 
+    setLoginEmail, 
+    setLoginUserName, 
+    loginPassword, 
+    setLoginPassword,
+    logInMessage,
+    setLoginMessage,
+    message,
+    setMessage
+  } = useContext(Context)
+
 
 
   return (
     <>
-        <div>
+        <div className='signInForm'>
          <form>
-            {/* <label>
-                <p>Email</p>
-                <input type='email' placeholder='email' value={} onChange={} required/>
+            <label>
+              <input type='text' placeholder='username' value={loginUserName} onChange={(e) => setLoginUserName(e.target.value)} required/>
             </label>
             <label>
-                <p>Password</p>
-                <input type='password' placeholder='password' value={} onChange={} required/>
+              <input type='password' placeholder='password' value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} required/>
             </label>
-            <input type='submit' value="SignIn" onClick={}/> */}
-        </form>
+            <input onClick={handleLogInSubmit} type='submit' value="Login" className='submit-btn'/>
+        
+        </form><div><h2>{logInMessage}</h2></div>
     </div>
     </>
   )

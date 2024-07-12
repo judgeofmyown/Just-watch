@@ -1,7 +1,7 @@
 header{
     display: flex;
     height: 100px;
-    background: black;
+    background: rgb(48, 48, 48);
     color: white;
     gap: 100px;
     position: sticky;
@@ -54,6 +54,7 @@ header{
     position: absolute;
     display: flex;
     flex-direction: column;
+    z-index: 5000;
 
 }
 
@@ -65,5 +66,107 @@ header{
 
 .profile-menu li:hover{
     background-color: #888888;
+
+}
+
+.profile-menu .profile-btn{
+    cursor: pointer;
+}
+
+.item-menu{
+    display: none;
+}
+.side-nav{
+    display: none;
+}
+
+@media only screen and (max-width: 450px){
+    header{
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .nav-Items{
+        display: none;
+    }
+    .profile{
+        display: none;
+    }
+
+
+    .item-menu{
+        display: flex;
+        background: white;
+        position: absolute;
+        top: 3px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: transparent;
+        margin-right: 3px;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-menu .bar{
+        width: 60%;
+        height: 2px;
+        background: #111;
+    }
+
+    .side-nav{
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        display: flex;
+        height: 100vh;
+        width: 50vw;
+        background: #888888;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to{ opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .visible{
+        animation: fadeIn 0.5s forwards;
+    }
+
+    .disappear{
+        animation: fadeOut 0.5s forwards;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    #side-nav ul{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        padding: 5px;
+    }
+    
 
 }
